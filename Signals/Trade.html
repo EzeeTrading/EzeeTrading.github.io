@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>SBR Alert</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="We at EzeeTrading.in receives lot of requests by our followers. This tool is a part of out Ease of Trading Toolset... So that entry level Retail Participants as well as much more experienced Traders can enjoy seamless Trading experience without looking into technicalities themselves.">
+	<meta name="keywords" content="kite, zerodha, trading apis, free trading apis, automated trading apis, stock trading apis, rest api stock market, nse trading api, html5 trading platform, best trading platform, best web trading platform, trade plugin, stock trade button">
+	<link rel="image_src" href="https://kite.trade/static/images/splash.png">
+	<meta property="og:image" content="/static/images/splash.png">
+
+	<link rel="icon" type="image/png" href="https://kite.trade/static/images/favicon.png">
+	<link href="Trade_files/css.css" rel="stylesheet">
+
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="Trade_files/analytics.js"></script><script src="Trade_files/jquery.js"></script>
+
+ 	<link type="text/css" rel="stylesheet" href="Trade_files/main.css">
+
+ 	<!-- [head] -->
+</head>
+<body>
+  
+
+<!-- 	<meta name="description" content="Embed one-click stock trading buttons on your website, blogs, and apps easily" />
+	<meta name="keywords" content="kite plugin, html5 trading plugin, kite publisher javascript, javascript trading platform" />
+ -->
+
+<div class="container sections">
+	<section class="row large">
+		<!--<h3> Powered by...<h3> -->
+		<h1 class="title">EzeeTrading.in</h1>
+	</section>
+
+	<hr>
+	
+	<section class="examples">
+		<h3>Branded button examples</h3>
+		<div class="row">
+			<div class="four columns">
+				<p>Buy a single share of RELIANCE</p>
+				<kite-button data-kite="kitedemo" data-exchange="NSE" data-product="MIS" data-tradingsymbol="RELIANCE" data-transaction_type="BUY" data-quantity="1" data-order_type="LIMIT" data-price="100" class="kite-buy" title="BUY RELIANCE">Buy RELIANCE</kite-button>
+			</div>
+			<div class="four columns">
+				<p>Sell a single share of SBIN</p>
+				<kite-button data-kite="kitedemo" data-exchange="NSE" data-tradingsymbol="SBIN" data-transaction_type="SELL" data-quantity="1" data-order_type="LIMIT" data-price="100" class="kite-sell" title="SELL SBIN">Sell SBIN</kite-button>
+			</div>
+			<div class="four columns">
+				<p>Trade a basket of multiple stocks</p>
+				<div id="branded-trade-button"><button title="Trade with Kite" class="kite-trade-button"></button><button title="Trade with Kite" class="kite-trade-button"></button></div>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</section>
+
+	<hr>
+	<section class="row examples large">
+		<h3>Custom buttons and links</h3>
+		<div class="row">
+			<div class="four columns">
+				<button class="button" data-kite="kitedemo" data-exchange="NSE" data-tradingsymbol="SBIN" data-transaction_type="BUY" data-quantity="1" data-order_type="MARKET">Buy 1 share of SBI</button>
+			</div>
+			<div class="four columns">
+				<button class="button" data-kite="kitedemo" data-exchange="NSE" data-tradingsymbol="RELIANCE" data-transaction_type="BUY" data-quantity="1" data-order_type="MARKET">Sell 1 share of RELIANCE</button>
+			</div>
+			<div class="four columns">
+				<a href="#" id="buy-basket-stock"><strong>Buy a basket of stocks</strong></a>
+			</div>
+			<div class="clear"> </div>
+		</div>
+	</section>
+
+	<hr>
+	<section class="row">
+		<h3>Dynamic input example</h3>
+		<form class="row" id="example-form" method="get">
+			<div class="four columns">
+				<p><label>Number of SBIN shares you want to trade</label></p>
+				<input type="number" max="100" id="num-shares" maxlength="3" value="9">
+			</div>
+			<div class="four columns">
+				<p><label>Would you like to Buy or Sell the shares?</label></p>
+				<select id="transaction-type">
+					<option value="BUY" selected="selected">Buy</option>
+					<option value="SELL">Sell</option>
+				</select>
+			</div>
+			<div class="four columns last">
+				<p>&nbsp;</p>
+				<input type="submit" value="Go!" class="button button-primary">
+			</div>
+			<div class="clear"> </div>
+		</form>
+	</section>
+
+</div>
+
+<script src="Trade_files/publisher.js"></script>
+<script>
+KiteConnect.ready(function() {
+	// Initialize a new Kite instance. You can initialize multiple instances if you need.
+	var kite = new KiteConnect("kitedemo");
+
+	// Add a stock to the basket
+	kite.add({
+		"exchange": "NSE",
+		"tradingsymbol": "INFY",
+		"quantity": 5,
+		"transaction_type": "BUY",
+		"order_type": "MARKET",
+		"product": "MIS"
+	});
+
+	// Add another stock
+	kite.add({
+		"exchange": "NSE",
+		"tradingsymbol": "SBIN",
+		"quantity": 1,
+		"order_type": "LIMIT",
+		"transaction_type": "SELL",
+		"price": 105
+	});
+
+	// Render the in-built button inside a given target
+	kite.renderButton("#branded-trade-button");
+	kite.link("#buy-basket-stock");
+
+
+	// form
+	$(document).ready(function() {
+		$("#example-form").submit(function() {
+			var kite = new KiteConnect("kitedemo"),
+				qty = parseInt($("#num-shares").val()),
+				typ = $("#transaction-type").val();
+
+			kite.add({
+				"exchange": "NSE",
+				"tradingsymbol": "SBIN",
+				"quantity": !isNaN(qty) ? qty : 1,
+				"order_type": "LIMIT",
+				"transaction_type": "SELL",
+				"price": 105,
+				"product": "MIS"
+			});
+			kite.connect();
+
+			return false;
+		});
+	});
+}); 
+</script>
+
+
+<footer>
+	<div class="mini-container">
+<!-- 		<div class="row">
+			<div class="six columns">
+				<p class="footer-branding center-on-mobile">
+					Built by <a href="http://rainmatter.com/tech"><img class="logo-rainmatter" src="/static/images/rainmt-footer.png" alt="Rainmatter" /></a>
+				</p>
+			</div>
+			<div class="six columns text-right">
+				<p class="footer-branding center-on-mobile">
+					Broking services <a title="Zerodha - The discount broker" href="https://zerodha.com/?c=RAINMT&leadsrc=kite.trade"><img src="/static/images/zerodha-footer.png" alt="Zerodha" /></a>
+				</p>
+			</div>
+		</div>
+ -->
+		<div class="text-small disclaimer">
+			<p>
+				Zerodha Broking Ltd., Member of  NSE &amp; BSE — SEBI Registration 
+no.: INZ000031633 | CDSL: Depository services through Zerodha Securities
+ Pvt. Ltd. - SEBI Registration no.: IN-DP-100-2015 | Commodity Trading 
+through Zerodha Commodities Pvt. Ltd. MCX: 46025 | NCDEX : 1138. SEBI 
+Registration no.: INZ000038238 | Registered Address: Zerodha, #153/154, 
+4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th 
+Phase, Bangalore - 560078, Karnataka, India
+			</p>
+			<p>
+				DISCLAIMER: Capital markets, trading, and investments have inherent 
+risks. Please make sure you understand the risks involved and carefully 
+read the Risk Disclosure Document as prescribed by SEBI | ICF before 
+participating in the markets — <a href="https://kite.trade/terms">Read terms &amp; conditions</a>
+			</p>
+			
+		</div>
+	</div>
+<!-- Google Analytics -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-29026012-7', 'auto');
+	ga('send', 'pageview');
+</script>	
+</footer>
+
+
+<link rel="stylesheet" href="Trade_files/publisher.css"><link rel="stylesheet" href="Trade_files/publisher_002.css"></body></html>
