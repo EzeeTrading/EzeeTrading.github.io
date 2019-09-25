@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>EzeeTrading.in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We at EzeeTrading.in receives lot of requests by our followers. This tool is a part of out Ease of Trading Toolset... So that entry level Retail Participants as well as much more experienced Traders can enjoy seamless Trading experience without looking into technicalities themselves.">
+    <meta name="keywords" content="kite, zerodha, upstox, india, discount broker, semi-automated, trading, apis, free api, automated trading apis, stock trading apis, rest api stock market, nse trading api, html5 trading platform, best trading platform, best web trading platform, trade plugin, stock trade button">
+    <link rel="image_src" href="Trade_files/logo.png">
+    <meta property="og:image" content="Trade_files/logo.png">
+    <link rel="icon" type="image/png" href="Trade_files/logo.png">
+
+    <link href="Trade_files/css.css" rel="stylesheet">
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script async="" src="Trade_files/analytics.js"></script>
+    <script src="Trade_files/jquery.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="Trade_files/main.css">
+
+    <link rel="shortcut icon" href="Trade_files/logo.png">
+
+<style type="text/css">
+upstox-tradebutton {display: block;width: 150px;height: 40px;margin: 5px;cursor:pointer;}
+upstox-tradebutton:hover {opacity: 0.9}
+upstox-tradebutton[buy] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/buy.png");} 
+upstox-tradebutton[sell] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/sell.png");} 
+upstox-tradebutton[trade] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/trade.png");};</style>
+
+<style type="text/css">
+upstox-tradebutton {display: block;width: 150px;height: 40px;margin: 5px;cursor:pointer;} 
+upstox-tradebutton:hover {opacity: 0.9} 
+upstox-tradebutton[buy] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/buy.png");} 
+upstox-tradebutton[sell] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/sell.png");} 
+upstox-tradebutton[trade] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/trade.png");};
+</style>
+
+     <!-- [head] -->
+</head>
+
+
+<body>
+
+<div class="container sections">
+    <section class="row large">
+        <!--<h3> Powered by...<h3> -->
+        <h1 class="title">EzeeTrading.in</h1>
+    </section>
+
+    <hr>
+    
+    <section class="examples">
+        <h3>Click Below to Trade in Zerodha / Upstox</h3>
+        <div class="row">
+            <div class="four columns">
+                <a href="#" id="buy-basket-stock"><strong>Trade With Kite</strong></a>
+            </div>
+
+            <br></br>
+
+            <div class="btns-container">
+                <div class="branded-btn"> <upstox-tradebutton button-name="three" trade=""></upstox-tradebutton> <!-- <span>See code ></span> --> </div>
+            </div>
+
+        </div>
+        
+
+    <script src="Trade_files/publisher.js"></script>
+
+    <script>
+    KiteConnect.ready(function() {
+        // Initialize a new Kite instance. You can initialize multiple instances if you need.
+        var kite = new KiteConnect("rqnj99whkinv9fh4");
+  kite.add({ "exchange": "NSE", "tradingsymbol": "LICHSGFIN", "quantity": 10, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 409.0, "trigger_price": 410.25, "stoploss": 7.55, "squareoff": 123.1, "variety": "bo" });  
+        // Render the in-built button inside a given target
+        // kite.renderButton("#branded-trade-button");
+        kite.link("#buy-basket-stock");    
+        
+    });
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        var upstoxTradesConfig = {
+            "apiKey": "sample",
+            "button-name": {
+                "three": [
+ { "symbol": "LICHSGFIN", "exchange": "NSE", "series": "EQ", "quantity": 10, "price": 409.0, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 7.55, "target": 123.1, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 410.25} 
+                
+                
+                    ]
+            }
+        }
+    </script>
+    <script type="text/javascript" src="Trade_files/tradebutton.js"></script>
+
+
+
+    </section>
+
+    <hr>
+
+    <section class="row examples large">
+        <h3>Advance Features...</h3>
+        <p>Based on Requests of the Paid Users...</p>
+        
+        <h3><font color="green">Unlock Now... See Benefits below...</font></h3>
+          
+        <ul>
+        <li>Unlock - Trade with correct quantity and with proper risk and money management.</li>
+        <li>Unlock - Option to take bigger trades, with multiplier option. (So do not just restrict to 30k account, trade with any amount as per your capacity...)</li>
+        <li>Unlock - Special offers on upgrade to Fully automated trading.</li>
+        <li>Unlock - Get extra signals too. (Not posted on free channel).</li>
+        <li>Get extra alerts on event of entry, trigger, SL, target book. (optional).</li>
+        <li>Free channel will get delayed signals in future. Be Paid client and get updates on time. And stay ahead of others. Those who take the trade first are often the ones getting the major chunk of profit.</li>
+        <li>Extra goodies and free stuff from time to time for those subscribing in launch period.</li>
+        <li>Forward option available to share the Messages with your friends / other groups / channels.</li>
+        </ul>
+
+
+        <h3>Paid Service Fees: </h3>
+
+        <h4>Semi Automated:</h4>
+        <ul>
+        <li>1 Month - 1000 <b><font color="red">(Limited period offer)</font></b>.</li>
+        <li>6 Months - 6000</li>
+        <li>12 Months - 9000</li>
+        </ul>
+
+        <h4>Fully Automated:</h4>
+        <ul>
+        <li>1 Month - 3000</li>
+        <li>3 Month - 6000 <b><font color="red">(Limited period offer)</font></b>.</li>
+        <li>6 Month - 12000 <b><font color="red">(Limited period offer)</font></b>.</li>
+        <li>12 Months - 24000 <b><font color="red">(Limited period offer)</font></b>.</li>
+        </ul>
+
+        <p>
+        Make Payment to Google Pay id ( bhomikshah@okicici ) and send screenshot on Telegram @RoboTraderIndia to get started.
+        <br>
+        <b>Note:</b> We may withdraw the Limited period offer anytime without prior notice. Those who paid fees during offer period, will receive service on offer price. Others will have to pay new revised fees.
+        </p>
+        
+    </section>
+
+</div>
+
+
+<script src="Trade_files/publisher.js"></script>
+<!--<script src="https://kite.trade/publisher.js?v=3"></script>-->
+
+
+<footer>
+    <div class="mini-container">
+        <div class="text-small disclaimer">
+            <p>
+                DISCLAIMER: Capital markets, trading, and investments have inherent 
+risks. Please make sure you understand the risks involved and carefully 
+read the Risk Disclosure Document as prescribed by SEBI | ICF before 
+participating in the markets.
+
+            </p>
+            
+        </div>
+    </div>
+
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-29026012-7', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</footer>
+
+
+<link rel="stylesheet" href="Trade_files/publisher.css">
+<link rel="stylesheet" href="Trade_files/publisher_002.css">
+</body>
+</html>
