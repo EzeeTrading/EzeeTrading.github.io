@@ -57,13 +57,19 @@ upstox-tradebutton[trade] {background-image: url("https://s3.ap-south-1.amazonaw
 				...
 				...
 				...
-				
+
+				### Credits www.EzeeTrading.in
+
+				instrument=tick["instrument_token"]
 				ltt=tick["last_trade_time"]
 			
 				ltt_min_1=datetime.datetime(ltt.year, ltt.month, ltt.day, ltt.hour,ltt.minute)
 
+				# For any other timeframe. Simply change ltt_min_1 variable defination.
+				# e.g.
+				# ltt_min_15=datetime.datetime(ltt.year, ltt.month, ltt.day, ltt.hour,ltt.minute//15*15)
+
 				### Forming 1 Min Candles...
-				### Credits www.EzeeTrading.in
 
 				try:
 						if ltt_min_1 in candles_1[instrument]:
