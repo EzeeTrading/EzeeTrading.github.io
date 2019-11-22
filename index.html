@@ -1,97 +1,591 @@
-<!--suspectterms/default-->
-<!--suspectterms/default-->
-<!--suspectterms/default-->
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>ezeetrading.in</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="We at EzeeTrading.in receives lot of requests by our followers. This tool is a part of out Ease of Trading Toolset... So that entry level Retail Participants as well as much more experienced Traders can enjoy seamless Trading experience without looking into technicalities themselves.">
-<meta name="keywords" content="kite, zerodha, upstox, india, discount broker, semi-automated, trading, apis, free api, automated trading apis, stock trading apis, rest api stock market, nse trading api, html5 trading platform, best trading platform, best web trading platform, trade plugin, stock trade button">
-<link rel="image_src" href="Index_files/logo.png">
-<meta property="og:image" content="Index_files/logo.png">
-<link rel="icon" type="image/png" href="Index_files/logo.png">
+<html class="no-js" lang="en">
+<head>
 
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ezee Trading</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<meta name="robots" content="index,nofollow">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<script src="Index_files/jquery2.js"></script>
-<script src="Index_files/backstretch.js"></script>
-<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
-<style type="text/css">
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-display: block;
-}
-body {
-line-height: 1;
-height: 1000px;
-}
-ol, ul {
-list-style: none;
-}
-blockquote, q {
-quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-content: '';
-content: none;
-}
-table {
-border-collapse: collapse;
-border-spacing: 0;
-}
-body { font-family: 'Helvetica Neue', 'Segoe UI', Segoe, Helvetica, Arial, 'Lucida Grande', sans-serif; }
-#fullscreen { position:absolute; top:0; right:0; bottom:0; left:0; min-width:261px; min-height:330px; }
-#messagebox { width:231px; height:300px; padding:15px; position: absolute; top:50%; left:50%; margin:-165px 0 0 -130px; text-align:center; }
-h1 { margin:0 0 20px 0; display:block; background-image: url(http://ak2.imgaft.com/images/website-coming-soon-blank.png); width:194px; height:121px; color:#FFF; font-weight:bold; font-size:43px; line-height: 40px; letter-spacing:-2px; text-align:left; padding:52px 10px 58px 27px; -ms-transform: rotate(-20deg); -webkit-transform: rotate(-20deg); transform: rotate(-20deg);}
-h2 { color:#FFF; font-size:28px; line-height:34px; text-shadow:0px 0px 1px #4A63A0, 0px 0px 20px #4A63A0, 0px 0px 30px #4A63A0; }
-@media
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-h1 {
-background-image: url(http://ak2.imgaft.com/images/website-coming-soon-blank@2x.png);
-background-size:231px 231px;
-}
-}
-</style>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
-<body>
-<div style="position: absolute; z-index: 0; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;" id="fullscreen">
-<div id="messagebox">
-<h1>We are Comming Soon...!!</h1>
-<h2>Check back here again for some Awesome Stuff...!</h2>
-</div>
-<div style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 654px; width: 1349px; z-index: -999998; position: absolute;" class="backstretch"><img style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1349px; height: 1011.75px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -178.875px;" src="Index_files/construction-bg.jpg"></div></div>
-<script type="text/javascript">
-$("#fullscreen").backstretch("http://ak2.imgaft.com/images/construction-bg.jpg");
-</script>
-<img src="Index_files/img.html" id="impspacer" alt="" width="1" height="1">
-<script type="text/javascript" language="javascript">
-var impspacer = document.getElementById('impspacer');
-if (impspacer) { impspacer.src = 'http://ezeetrading.in/img.aspx?q=L3MkWGAkZmZ1AmVlAmp5ZQpjBQN5BGN3ZvHlAzpyZ3R0ZQNyZwMyWGAkWGV2ovHmpGNyZwMwWGAkZPHlAzIzWGAkZPHlAzLyZ3RyZwMyMlHmpGVjZGxjAwN0ZGDlAQV4WGV2L3xyZ3RkWGV2qTpyZ3RlWGV2rPHmpFHlAz56WGAkZPHlAzMjWGAkAQp5WGV2nT5aWGAkZFHlAaOjWGAknTLyZwMzM3NyZ3Rj-1'; }
-</script>
 
-</body></html>
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div> <!-- end header-logo -->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Ezee Trading</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">Ezee Trading bots</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Ready Strategies to Learn</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Training - Mini Learning bytes</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+    
+                <p>Committed to develop amazing Strategies and trading/investing Softwares to empower retail traders and investors.</p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- stats
+    ================================================== -->
+    <section id="stats" class="s-stats">
+
+        <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">5</div>
+                <h5>Ready Strategies to Learn</h5>
+				<a class="btn btn--primary full-width smoothscroll" href="#services">Learn Now</a>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">4</div>
+                <h5>Trading bots to Subscribe</h5>
+				<a class="btn btn--primary full-width smoothscroll" href="#about">Try Now</a>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">6</div>
+                <h5>Testing and Optimisation Services</h5>
+				<a class="btn btn--primary full-width smoothscroll" href="#works">Know More</a>
+            </div>
+
+        </div> <!-- end stats -->
+
+    </section> <!-- end s-stats -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.png" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+                <h1>
+                Welcome to <br>
+                Ezee Trading.
+                </h1>
+                <p>
+                A Must be place for Every Trader.<br>
+                We create amazing Strategies and <br>
+                Softwares that will help your stand out in Markets.
+                </p>
+            </div> <!-- end home-content__main -->
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-sidelinks">
+			<li><a class="smoothscroll" href="#services">Strategies to Learn</a></li>
+			<li><a class="smoothscroll" href="#about">Ezee Trading bots<span>Automation to Help you make Trading Ezee..!!!</span></a></li>
+			<li><a class="smoothscroll" href="#contact">Mini Learning bytes<span>Systematic Step by Step Learning.</span></a></li>
+			<li><a class="smoothscroll" href="#contact">Developer Zone<span>Ready Material for developers to build career in Trading.</span></a></li>
+            <li><a class="smoothscroll" href="#contact">Contact<span>Get in Touch</span></a></li>
+        </ul> <!-- end home-sidelinks -->
+		
+		
+
+        <a href="#services" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll Down</span>
+            <span class="home-scroll__icon"></span>
+        </a> <!-- end home-scroll -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header" > <!--data-aos="fade-up"-->
+            <div class="col-full">
+                <h3 class="subhead">Ezee Trading Bots</h3>
+                <h1 class="display-1">Complicated Calculations in a fraction of seconds. Ready to trade Buttons. </h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row"> <!-- data-aos="fade-up"-->
+            <div class="col-full">
+                <p class="lead">
+                Working Professionals have a common complain that they are not able to take advantage of Markets potential to the fullest.
+				Dont Worry, we have brought technology to your rescue.
+				All heavy operations and analysis is done by robots and ezee to trade clickable Trade buttons delivered in your mobile, to enable trading at your finger tips.
+				Dont thanks just us..! Thank the new era of Equity Markets..!
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <div class="row">
+                
+            <div class="about-process process block-1-2 block-tab-full">
+
+                <div class="process__vline-left"></div>
+                <div class="process__vline-right"></div>
+
+                <div class="col-block process__col" data-item="1" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Ezee Sell bot - Fast and Furious Mode</h4>
+
+                        <p>
+						 Get the alert message in your mobile daily at fix time and click to trade with SL and Target. Rest of the day free to focus on your office/business work.
+						 This bot identifies Weak Stocks for the day to Sell. Fast and Furious Mode is recommended for those who want less number trades but more accurate ones.
+                        </p>
+						<a class="btn btn--primary full-width" href="https://p-y.tm/H-JSFZo">Subscribe Now</a>
+						<a class="btn btn--primary full-width" href="https://telegra.ph/Ezee-Sell-bot---Fast-and-Furious-Mode-10-12">Past Performance</a>
+                    </div>
+                </div>
+
+                <div class="col-block process__col" data-item="2" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Ezee Sell bot - Slow and Steady Mode</h4>
+                        <p>
+						 Get the alert message in your mobile daily at fix time and click to trade with SL and Target. Rest of the day free to focus on your office/business work.
+						 This bot identifies Weak Stocks for the day to Sell. Slow and Steady Mode is recommended for those who want more number trades for better averaging.
+                        </p>
+						<a class="btn btn--primary full-width" href="https://p-y.tm/H-JSFZo">Subscribe Now</a>
+						<a class="btn btn--primary full-width" href="https://telegra.ph/Ezee-Sell-bot---Slow-and-Steady-Mode-10-12">Past Performance</a>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="3" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Ezee Sell bot - Moderate Mode</h4>
+                        <p>
+						 Get the alert message in your mobile daily at fix time and click to trade with SL and Target. Rest of the day free to focus on your office/business work.
+						 This bot identifies Weak Stocks for the day to Sell. Moderate Mode is recommended for those who prefer to have moderate number of trades(neither too many nor too less).
+                        </p>
+						<a class="btn btn--primary full-width" href="https://p-y.tm/H-JSFZo">Subscribe Now</a>
+						<a class="btn btn--primary full-width" href="https://telegra.ph/Ezee-Sell-bot---Moderate-Mode-10-12">Past Performance</a>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="4" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Special Breakouts bot</h4>
+                        <p>
+						 Suggested for active Traders, as it generates trades throughout the day, whenever a proper Breakout with confirmation is found. It has historically captured many big intraday moves. If you like trend Following, you must have this.
+                        </p>
+						<a class="btn btn--primary full-width" href="https://p-y.tm/H-JSFZo">Subscribe Now</a>
+						<a class="btn btn--primary full-width" href="https://telegra.ph/Special-Breakouts---Past-Performance-11-22">Past Performance</a>
+                    </div>
+                </div>
+
+            </div> <!-- end process -->
+
+        </div> <!-- end about-stats -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services light-gray">
+
+        <div class="row section-header" > <!-- data-aos="fade-up" -->
+            <div class="col-full">
+                <h3 class="subhead">Ready Strategies to Learn</h3>
+                <h1 class="display-1">Shorten your learning curve by using our tested Strategies.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row" > <!-- data-aos="fade-up" -->
+            <div class="col-full">
+                <p class="lead">
+                <!--Analysing Markets twists and turns is our Passion. -->
+				Out of 100 Strategies that we test rigorous, only 2% to 3% turns out to be Robust and Universal Strategies. Learn them and have a good Trading Edge over others without going through intensive research yourself.
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
+
+            <div class="col-block service-item " data-aos="fade-up">
+                <div class="service-text">
+                    <h3 class="h4">1. New Traders Special</h3>
+					<div class="item-folio__thumb">
+						<a href="https://telegra.ph/Ezee-Stock-Selection-Filter-for-Manual-traders-10-25" class="thumb-link" title="Lamp" data-size="1050x700">
+							<img src="images/New-Traders.png"
+								 alt="">
+						</a>
+					</div>
+					<br></br>
+                    <p>New to Market? <br> <b>Then this is the perfect one for you...!</b><br>
+					This set of 3 Videos of step by step development of an effective Strategy, not only gives you a good strategy at the end of the course, but also teach you the approach of developing a good Strategy.
+					<!--90% of New Traders dont have a reliable strategy, so they are not able to earn well from market.-->
+                    </p>
+					<a class="btn btn--primary full-width" href="https://telegra.ph/Ezee-Stock-Selection-Filter-for-Manual-traders-10-25">Know More</a>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-text">
+                    <h3 class="h4">2. One Day Early</h3>
+					<div class="item-folio__thumb">
+						<a href="https://telegra.ph/Isnt-it-good-if-you-can-predict-one-day-before-which-stock-to-Buy-and-which-to-Sell-next-day-11-05" class="thumb-link" title="Lamp" data-size="1050x700">
+							<img src="images/buy-sell-hold.jpg"
+								 alt="">
+						</a>
+					</div>
+					<br></br>
+					<br></br>
+                    <p>
+					Learn a sofasticated Indicator to identify stocks one day earlier to take Buy and Sell trades next day.
+					Also, it identifies stocks to stay away next day.
+					You may clubbed this with your existing strategy to increase accuracy of your own system.
+                    </p>
+					<a class="btn btn--primary full-width" href="https://telegra.ph/Isnt-it-good-if-you-can-predict-one-day-before-which-stock-to-Buy-and-which-to-Sell-next-day-11-05">Know More</a>
+                </div>
+            </div>
+
+            <div class="col-block service-item " data-aos="fade-up">
+                <div class="service-text">
+                    <h3 class="h4">3. The Making of Sell bot</h3>
+					<div class="item-folio__thumb">
+						<a href="https://telegra.ph/Making-of-Sell-bot-10-27" class="thumb-link" title="Lamp" data-size="1050x700">
+							<img src="images/New-Traders.png"
+								 alt="">
+						</a>
+					</div>
+					<br></br>
+                    <p>Learn the Strategy behind the trades taken by our Sell bot <br>					
+                    </p>
+					<a class="btn btn--primary full-width" href="https://telegra.ph/Making-of-Sell-bot-10-27">Know More</a>
+                </div>
+            </div>
+
+            <div class="col-block service-item " data-aos="fade-up">
+                <div class="service-text">
+                    <h3 class="h4">4. New Traders - Training 2</h3>
+					<div class="item-folio__thumb">
+						<a href="https://telegra.ph/Ezee-Stock-Selection-Filter-for-Manual-traders-10-25" class="thumb-link" title="Lamp" data-size="1050x700">
+							<img src="images/New-Traders.png"
+								 alt="">
+						</a>
+					</div>
+					<br></br>
+                    <p>New to Market? <br> <b>Then this is the perfect one for you...!</b><br>
+					This set of 3 Videos of step by step development of an effective Strategy, not only gives you a good strategy at the end of the course, but also teach you the approach of developing a good Strategy.
+					<!--90% of New Traders dont have a reliable strategy, so they are not able to earn well from market.-->
+                    </p>
+					<a class="btn btn--primary full-width" href="https://telegra.ph/Ezee-Stock-Selection-Filter-for-Manual-traders-10-25">Know More</a>
+                </div>
+            </div>
+
+            <div class="col-block service-item " data-aos="fade-up">
+                <div class="service-text">
+                    <h3 class="h4">5. Learn Special Breakouts bot - Rules</h3>
+					<div class="item-folio__thumb">
+						<a href="#" class="thumb-link" title="Lamp" data-size="1050x700">
+							<img src="images/New-Traders.png"
+								 alt="">
+						</a>
+					</div>
+					<br></br>
+                    <p>Learn Rules to distinguish bad breakouts with good breakouts <br>
+                    </p>
+					<a class="btn btn--primary full-width" href="#">Know More</a>
+                </div>
+            </div>
+
+
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+        
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Extra Items</h3>
+                <!--<h1 class="display-1">Software Engineers and Aspiring Traders may find these extra items useful.</h1>-->
+            </div>
+        </div> <!-- end section-header -->
+		
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="h1">Software Engineers and Aspiring Traders may find these extra items useful.</h2>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full "> <!-- testimonials__slider -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            Get Corporate Adjusted Data to test your Strategies Correctly.
+                            <!--<span>CEO, Apple</span>-->
+                        </div>
+                        <p>Quality data is important to test any Strategy correctly. Avoid spending a lot of time on doing adjustments for Corperate actions like, Stock Split, Bonus, etc.
+						We have already done the tough work. You may take advantage of that and save your time. Contact us to get a quote on case to case basis.
+                        </p>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            Professionally Backtest your Strategy.
+                            <!--<span>CEO, Apple</span>-->
+                        </div>
+                        <p>Just scrolling few months of charts to check your strategy is not the correct way to test a strategy for robustness and effectiveness. Not only is it prone to errors but also the sample of the test is too small to be of any Statistical importance.
+						In order to be assured of the strategy to work in real market, you have to observe some other items too than just mechanical backtesting.
+						One also has to take into account the overall changes in trading methods, technology, major trends changes, etc to relate the findings of the backtest. 
+						Also the data to be considered for proper backtest of an intraday startegy should be atleast 3 to 5 years. And for Positional investment strategy, from day 1 of index.
+						Contact us to get a quote on case to case basis.
+                        </p>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            Optimisation Service of Trading Strategy
+                            <!--<span>CEO, Apple</span>-->
+                        </div>
+                        <p>We have designed an Optimisation Engine, which helps in easily optimising any strategy in a reliable way without over-optimisation.
+						This is one of the reason why we have been able to offer so many good Strategies for those who want to Learn Markets.
+						If you feel you are stucked with your Strategy, and waiting to find that one small change that would boost your Strategy Returns/Accoract/RiskReward, then stop scratching your head and get a professional help.
+						Who knows, you might be so close to win a jackpot on your strategy. We do not charge if we are not able to optimise the strategy further. Only small effort charge in that case.
+                        </p>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            Sample strategy automated code / Assistance in coding your Strategy.
+                            <!--<span>CEO, Apple</span>-->
+                        </div>
+                        <p>
+						Have you Tried a lot but stucked with initial phase of installing packages, getting connectivity, authentication, processing tick data, calculating candles, coding indicators, etc?
+						Contact us and get a working code with sample strategy automated. Then focus on customising it your way. Some have saved months of efforts by taking ready code from us.
+                        </p>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            Paper Trading Services.
+                            <!--<span>CEO, Apple</span>-->
+                        </div>
+                        <p>
+						Want to save API charges, Server Charges, coding efforts, monitoring efforts, daily token generation, etc.
+						We have over 87 strategies that is paper traded on daily basis over tick by tick data. Adding one more strategy is not a big effort for us. You save on lot of efforts and third parts expenses, by offloading that part to us.
+						Contact us to get a quote on case to case basis.
+                        </p>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            One to One Session for Engineers
+                            <!--<span>CEO, Apple</span>-->
+                        </div>
+                        <p>
+						Have the potential, but not the time ?
+						Seems like Technology and Markets is changing at higher pace than Moore's Law.
+						Shortern your Learning Curve, by undergoing a one to one guidance on creating your career in Markets and Algo/Auto Trading in specific.
+						It is the future. Start early, reap the benefits early.						
+                        </p>
+                    </div> <!-- end testimonials__slide -->
+                    
+                </div> <!-- end testimonials__slider -->
+
+            </div> <!-- end testimonials -->
+
+        </div> <!-- end testimonials-wrap -->
+		
+
+    </section> <!-- end s-works -->
+
+
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">Contact Us</h3>
+                <h1 class="display-1 display-1--light">Get in touch and let's make something great together. Let's turn your idea on an even greater product.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row">
+
+            <div class="col-full contact-main" data-aos="fade-up">
+                <p>
+                <a href="mailto:#0" class="contact-email">EzeeTrading.in@gmail.com</a>                
+                </p>
+            </div> <!-- end contact-main -->
+
+        </div> <!-- end row -->
+
+        <div class="row">
+
+            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Follow Us</h3>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                    </li>
+                </ul> <!-- end contact-social -->
+
+				<!-- end contact-subscribe -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end row -->
+
+        <div class="row">
+            <div class="col-full cl-copyright">
+                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
+            </div>
+        </div>
+
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">            
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
