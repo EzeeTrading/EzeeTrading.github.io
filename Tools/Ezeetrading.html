@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EzeeTrading.in</title>
+</head>
+<body>
+
+<script src="https://kite.trade/publisher.js?v=1"></script>
+
+	<section class="row">
+		<!--<h3>EzeeTrading.in</h3>-->
+		<form class="row" id="example-form" method="get">
+
+			<div class="panel-body text-center">
+				<font color="darkgreen">
+				<b><label>Target Amount: </label>
+				<input type="number" id="TargetAmount" maxlength="8" value="2000" ></b>
+				</font>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="red">
+				<b>Stop Loss:</b>
+				<label class="radio-inline">
+					<input type="radio" name="optionSL" id="option1" value="0.5" checked=""> 0.5%
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optionSL" id="option2" value="0.9"> 0.9%
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optionSL" id="option3" value="1.0"> 1.0%
+				</label>
+				</font>
+				
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="darkgreen">
+				<b>Target:</b> 
+				<label class="radio-inline">
+					<input type="radio" name="optionTarget" id="option1" value="0.5"> 0.5%
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optionTarget" id="option2" value="0.9"> 0.9%
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optionTarget" id="option3" value="1.0" checked=""> 1.0%
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optionTarget" id="option4" value="1.5"> 1.5%
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optionTarget" id="option5" value="1.75"> 1.75%
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="optionTarget" id="option6" value="2.0"> 2.0%
+				</label>
+				</font>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-12">
+				<p><label for="Symbol">Symbol</label>
+				<select name="Symbol" id="Symbol" class="form-control">
+					
+<option value="ACC">ACC</option>
+<option value="ADANIENT">ADANIENT</option>
+<option value="ADANIPORTS">ADANIPORTS</option>
+<option value="ADANIPOWER">ADANIPOWER</option>
+<option value="AMARAJABAT">AMARAJABAT</option>
+<option value="AMBUJACEM">AMBUJACEM</option>
+<option value="APOLLOHOSP">APOLLOHOSP</option>
+<option value="APOLLOTYRE">APOLLOTYRE</option>
+<option value="ASHOKLEY">ASHOKLEY</option>
+<option value="ASIANPAINT">ASIANPAINT</option>
+<option value="AUROPHARMA">AUROPHARMA</option>
+<option value="AXISBANK">AXISBANK</option>
+<option value="BAJAJ-AUTO">BAJAJ-AUTO</option>
+<option value="BAJAJFINSV">BAJAJFINSV</option>
+<option value="BAJFINANCE">BAJFINANCE</option>
+<option value="BALKRISIND">BALKRISIND</option>
+<option value="BANKBARODA">BANKBARODA</option>
+<option value="BATAINDIA">BATAINDIA</option>
+<option value="BEL">BEL</option>
+<option value="BERGEPAINT">BERGEPAINT</option>
+<option value="BHARATFORG">BHARATFORG</option>
+<option value="BHARTIARTL">BHARTIARTL</option>
+<option value="BHEL">BHEL</option>
+<option value="BIOCON">BIOCON</option>
+<option value="BOSCHLTD">BOSCHLTD</option>
+<option value="BPCL">BPCL</option>
+<option value="BRITANNIA">BRITANNIA</option>
+<option value="CADILAHC">CADILAHC</option>
+<option value="CANBK">CANBK</option>
+<option value="CASTROLIND">CASTROLIND</option>
+<option value="CENTURYTEX">CENTURYTEX</option>
+<option value="CESC">CESC</option>
+<option value="CHOLAFIN">CHOLAFIN</option>
+<option value="CIPLA">CIPLA</option>
+<option value="COALINDIA">COALINDIA</option>
+<option value="COLPAL">COLPAL</option>
+<option value="CONCOR">CONCOR</option>
+<option value="CUMMINSIND">CUMMINSIND</option>
+<option value="DABUR">DABUR</option>
+<option value="DISHTV">DISHTV</option>
+<option value="DIVISLAB">DIVISLAB</option>
+<option value="DLF">DLF</option>
+<option value="DRREDDY">DRREDDY</option>
+<option value="EICHERMOT">EICHERMOT</option>
+<option value="EQUITAS">EQUITAS</option>
+<option value="ESCORTS">ESCORTS</option>
+<option value="EXIDEIND">EXIDEIND</option>
+<option value="FEDERALBNK">FEDERALBNK</option>
+<option value="GAIL">GAIL</option>
+<option value="GLENMARK">GLENMARK</option>
+<option value="GMRINFRA">GMRINFRA</option>
+<option value="GODREJCP">GODREJCP</option>
+<option value="GRASIM">GRASIM</option>
+<option value="HAVELLS">HAVELLS</option>
+<option value="HCLTECH">HCLTECH</option>
+<option value="HDFC">HDFC</option>
+<option value="HDFCBANK">HDFCBANK</option>
+<option value="HEROMOTOCO">HEROMOTOCO</option>
+<option value="HEXAWARE">HEXAWARE</option>
+<option value="HINDALCO">HINDALCO</option>
+<option value="HINDPETRO">HINDPETRO</option>
+<option value="HINDUNILVR">HINDUNILVR</option>
+<option value="IBULHSGFIN">IBULHSGFIN</option>
+<option value="ICICIBANK">ICICIBANK</option>
+<option value="ICICIPRULI">ICICIPRULI</option>
+<option value="IDEA">IDEA</option>
+<option value="IDFCFIRSTB">IDFCFIRSTB</option>
+<option value="IGL">IGL</option>
+<option value="INDIGO">INDIGO</option>
+<option value="INDUSINDBK">INDUSINDBK</option>
+<option value="INFRATEL">INFRATEL</option>
+<option value="INFY" selected="selected">INFY</option>
+<option value="IOC">IOC</option>
+<option value="ITC">ITC</option>
+<option value="JINDALSTEL">JINDALSTEL</option>
+<option value="JSWSTEEL">JSWSTEEL</option>
+<option value="JUBLFOOD">JUBLFOOD</option>
+<option value="JUSTDIAL">JUSTDIAL</option>
+<option value="KOTAKBANK">KOTAKBANK</option>
+<option value="L&TFH">L&TFH</option>
+<option value="LICHSGFIN">LICHSGFIN</option>
+<option value="LT">LT</option>
+<option value="LUPIN">LUPIN</option>
+<option value="M&M">M&M</option>
+<option value="M&MFIN">M&MFIN</option>
+<option value="MANAPPURAM">MANAPPURAM</option>
+<option value="MARICO">MARICO</option>
+<option value="MARUTI">MARUTI</option>
+<option value="MCDOWELL-N">MCDOWELL-N</option>
+<option value="MFSL">MFSL</option>
+<option value="MGL">MGL</option>
+<option value="MINDTREE">MINDTREE</option>
+<option value="MOTHERSUMI">MOTHERSUMI</option>
+<option value="MRF">MRF</option>
+<option value="MUTHOOTFIN">MUTHOOTFIN</option>
+<option value="NATIONALUM">NATIONALUM</option>
+<option value="NBCC">NBCC</option>
+<option value="NCC">NCC</option>
+<option value="NESTLEIND">NESTLEIND</option>
+<option value="NIITTECH">NIITTECH</option>
+<option value="NMDC">NMDC</option>
+<option value="NTPC">NTPC</option>
+<option value="OIL">OIL</option>
+<option value="ONGC">ONGC</option>
+<option value="PAGEIND">PAGEIND</option>
+<option value="PEL">PEL</option>
+<option value="PETRONET">PETRONET</option>
+<option value="PFC">PFC</option>
+<option value="PIDILITIND">PIDILITIND</option>
+<option value="PNB">PNB</option>
+<option value="POWERGRID">POWERGRID</option>
+<option value="PVR">PVR</option>
+<option value="RAMCOCEM">RAMCOCEM</option>
+<option value="RBLBANK">RBLBANK</option>
+<option value="RECLTD">RECLTD</option>
+<option value="RELIANCE">RELIANCE</option>
+<option value="SAIL">SAIL</option>
+<option value="SBIN">SBIN</option>
+<option value="SHREECEM">SHREECEM</option>
+<option value="SIEMENS">SIEMENS</option>
+<option value="SRF">SRF</option>
+<option value="SRTRANSFIN">SRTRANSFIN</option>
+<option value="SUNPHARMA">SUNPHARMA</option>
+<option value="SUNTV">SUNTV</option>
+<option value="TATACHEM">TATACHEM</option>
+<option value="TATAELXSI">TATAELXSI</option>
+<option value="TATAGLOBAL">TATAGLOBAL</option>
+<option value="TATAMOTORS">TATAMOTORS</option>
+<option value="TATAMTRDVR">TATAMTRDVR</option>
+<option value="TATAPOWER">TATAPOWER</option>
+<option value="TATASTEEL">TATASTEEL</option>
+<option value="TCS">TCS</option>
+<option value="TECHM">TECHM</option>
+<option value="TITAN">TITAN</option>
+<option value="TORNTPHARM">TORNTPHARM</option>
+<option value="TORNTPOWER">TORNTPOWER</option>
+<option value="TVSMOTOR">TVSMOTOR</option>
+<option value="UBL">UBL</option>
+<option value="UJJIVAN">UJJIVAN</option>
+<option value="ULTRACEMCO">ULTRACEMCO</option>
+<option value="UNIONBANK">UNIONBANK</option>
+<option value="UPL">UPL</option>
+<option value="VEDL">VEDL</option>
+<option value="VOLTAS">VOLTAS</option>
+<option value="WIPRO">WIPRO</option>
+<option value="YESBANK">YESBANK</option>
+<option value="ZEEL">ZEEL</option>	
+				
+				</select>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<label>Price</label>
+				<input id="Price" value="">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<button type="button" class="button button-primary" onclick="placeBO2(&#39;BUY&#39;,&#39;LIMIT&#39;)"><font color="green"><b>BUY LIMIT</b></font></button>
+				<button type="button" class="button button-primary" onclick="placeBO2(&#39;BUY&#39;,&#39;SL&#39;)"><font color="green"><b>BUY SL</b></font></button>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<button type="button" class="button button-primary" onclick="placeBO2(&#39;SELL&#39;,&#39;LIMIT&#39;)"><font color="red"><b>SELL LIMIT</b></font></button>
+				<button type="button" class="button button-primary" onclick="placeBO2(&#39;SELL&#39;,&#39;SL&#39;)"><font color="red"><b>SELL SL</b></font></button>
+				</p>
+			</div>
+			<div class="clear"> </div>
+		</form>
+	</section>
+
+<script>
+
+
+function RoundPrice(price){
+	return (Math.round(price*20.0)/20);
+}
+
+
+
+function placeBO2(typ,order_type){
+
+			var kite = new KiteConnect("rqnj99whkinv9fh4");
+			
+			var Symbol = $("#Symbol").val();
+			var Price = RoundPrice($("#Price").val());
+			var SL_Per = parseFloat($('input:radio[name=optionSL]:checked').val());
+			var Target_Per = parseFloat($('input:radio[name=optionTarget]:checked').val());
+			var TargetAmount = ($("#TargetAmount").val());
+			
+			var SL_pips = RoundPrice(SL_Per * Price /100.0)
+			var Target_pips = RoundPrice(Target_Per * Price /100.0)
+			var Quantity = Math.max(1,Math.round(TargetAmount / Target_pips))
+						
+			kite.add({
+				"exchange": "NSE",
+				"tradingsymbol": Symbol,
+				"quantity": Quantity,
+				"order_type": order_type,
+				"transaction_type": typ,
+				"price": Price,
+				"product": "MIS",
+				"trigger_price": Price,
+				"stoploss": SL_pips,
+				"squareoff": Target_pips,
+				"variety": "bo"
+			});
+			kite.connect();
+
+
+			return false;
+}
+
+</script>
+</body>
+</html>
