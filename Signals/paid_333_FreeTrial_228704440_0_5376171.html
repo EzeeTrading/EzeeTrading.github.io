@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>EzeeTrading.in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="We at EzeeTrading.in receives lot of requests by our followers. This tool is a part of out Ease of Trading Toolset... So that entry level Retail Participants as well as much more experienced Traders can enjoy seamless Trading experience without looking into technicalities themselves.">
+        <meta name="keywords" content="kite, zerodha, upstox, india, discount broker, semi-automated, trading, apis, free api, automated trading apis, stock trading apis, rest api stock market, nse trading api, html5 trading platform, best trading platform, best web trading platform, trade plugin, stock trade button">
+        <link rel="image_src" href="Trade_files/logo.png">
+        <meta property="og:image" content="Trade_files/logo.png">
+        <link rel="icon" type="image/png" href="Trade_files/logo.png">
+
+        <link href="Trade_files/css.css" rel="stylesheet">
+
+        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <script async="" src="Trade_files/analytics.js"></script>
+        <script src="Trade_files/jquery.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="Trade_files/main.css">
+
+        <link rel="shortcut icon" href="Trade_files/logo.png">
+
+    <style type="text/css">
+    upstox-tradebutton {display: block;width: 150px;height: 40px;margin: 5px;cursor:pointer;}
+    upstox-tradebutton:hover {opacity: 0.9}
+    upstox-tradebutton[buy] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/buy.png");} 
+    upstox-tradebutton[sell] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/sell.png");} 
+    upstox-tradebutton[trade] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/trade.png");};</style>
+
+    <style type="text/css">
+    upstox-tradebutton {display: block;width: 150px;height: 40px;margin: 5px;cursor:pointer;} 
+    upstox-tradebutton:hover {opacity: 0.9} 
+    upstox-tradebutton[buy] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/buy.png");} 
+    upstox-tradebutton[sell] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/sell.png");} 
+    upstox-tradebutton[trade] {background-image: url("https://s3.ap-south-1.amazonaws.com/tradebutton/trade.png");};
+    </style>
+
+         <!-- [head] -->
+    </head>
+
+
+    <body>
+
+    <div class="container sections">
+        <section class="row large">
+            <!--<h3> Powered by...<h3> -->
+            <h1 class="title">EzeeTrading.in</h1>
+        </section>
+
+        <hr>
+        
+        <section class="examples">
+            <h3>Click Below to Trade in Zerodha / Upstox</h3>
+            <div class="row">
+                <div class="four columns">
+                    <a href="#" id="buy-basket-stock"><strong>Trade With Kite</strong></a>
+                </div>
+
+                <br></br>
+
+                <div class="btns-container">
+                    <div class="branded-btn"> <upstox-tradebutton button-name="three" trade=""></upstox-tradebutton> <!-- <span>See code ></span> --> </div>
+                </div>
+
+            </div>
+            
+
+        <script src="Trade_files/publisher.js"></script>
+
+        <script>
+        KiteConnect.ready(function() {
+            // Initialize a new Kite instance. You can initialize multiple instances if you need.
+            var kite = new KiteConnect("rqnj99whkinv9fh4");
+       kite.add({ "exchange": "NSE", "tradingsymbol": "DLF", "quantity": 154, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 130.05, "trigger_price": 130.05, "stoploss": 3.25, "squareoff": 26.0, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "YESBANK", "quantity": 813, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 24.6, "trigger_price": 24.6, "stoploss": 0.6, "squareoff": 4.9, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "SRTRANSFIN", "quantity": 31, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 652.7, "trigger_price": 652.7, "stoploss": 16.3, "squareoff": 130.55, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "MANAPPURAM", "quantity": 202, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 99.0, "trigger_price": 99.0, "stoploss": 2.5, "squareoff": 19.8, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "INDIGO", "quantity": 21, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 953.5, "trigger_price": 953.5, "stoploss": 23.85, "squareoff": 190.7, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "NCC", "quantity": 1262, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 15.85, "trigger_price": 15.85, "stoploss": 0.4, "squareoff": 3.15, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "MOTHERSUMI", "quantity": 343, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 58.35, "trigger_price": 58.35, "stoploss": 1.45, "squareoff": 11.65, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "ZEEL", "quantity": 164, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 122.3, "trigger_price": 122.3, "stoploss": 3.05, "squareoff": 24.45, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "ESCORTS", "quantity": 32, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 616.05, "trigger_price": 616.05, "stoploss": 15.4, "squareoff": 123.2, "variety": "bo" });    kite.add({ "exchange": "NSE", "tradingsymbol": "JINDALSTEL", "quantity": 242, "transaction_type": "SELL", "product":"MIS", "order_type": "SL", "price": 82.5, "trigger_price": 82.5, "stoploss": 2.05, "squareoff": 16.5, "variety": "bo" });  
+            // Render the in-built button inside a given target
+            // kite.renderButton("#branded-trade-button");
+            kite.link("#buy-basket-stock");    
+            
+        });
+        </script>
+
+
+
+
+        <script type="text/javascript">
+            var upstoxTradesConfig = {
+                "apiKey": "sample",
+                "button-name": {
+                    "three": [
+      { "symbol": "DLF", "exchange": "NSE", "series": "EQ", "quantity": 154, "price": 130.05, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 3.25, "target": 26.0, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 130.05}  ,  { "symbol": "YESBANK", "exchange": "NSE", "series": "EQ", "quantity": 813, "price": 24.6, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 0.6, "target": 4.9, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 24.6}  ,  { "symbol": "SRTRANSFIN", "exchange": "NSE", "series": "EQ", "quantity": 31, "price": 652.7, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 16.3, "target": 130.55, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 652.7}  ,  { "symbol": "MANAPPURAM", "exchange": "NSE", "series": "EQ", "quantity": 202, "price": 99.0, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 2.5, "target": 19.8, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 99.0}  ,  { "symbol": "INDIGO", "exchange": "NSE", "series": "EQ", "quantity": 21, "price": 953.5, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 23.85, "target": 190.7, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 953.5}  ,  { "symbol": "NCC", "exchange": "NSE", "series": "EQ", "quantity": 1262, "price": 15.85, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 0.4, "target": 3.15, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 15.85}  ,  { "symbol": "MOTHERSUMI", "exchange": "NSE", "series": "EQ", "quantity": 343, "price": 58.35, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 1.45, "target": 11.65, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 58.35}  ,  { "symbol": "ZEEL", "exchange": "NSE", "series": "EQ", "quantity": 164, "price": 122.3, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 3.05, "target": 24.45, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 122.3}  ,  { "symbol": "ESCORTS", "exchange": "NSE", "series": "EQ", "quantity": 32, "price": 616.05, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 15.4, "target": 123.2, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 616.05}  ,  { "symbol": "JINDALSTEL", "exchange": "NSE", "series": "EQ", "quantity": 242, "price": 82.5, "side": "SELL", "complexity": "oco", "orderType": "sl", "stoploss": 2.05, "target": 16.5, "trailingTicks": 0, "amo": false, "position": "i", "tif": "day", "triggerPrice": 82.5} 
+                    
+                    
+                        ]
+                }
+            }
+        </script>
+        <script type="text/javascript" src="Trade_files/tradebutton.js"></script>
+
+
+
+        </section>
+
+     <hr> <h3>Place Individual Orders...</h3>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "DLF"  data-quantity = 154  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 130.05  data-trigger_price = 130.05  data-stoploss = 3.25  data-squareoff = 26.0  data-variety = "bo"  >  DLF - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "DLF"  data-quantity = 154  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 133.3  data-variety = "co"  >  DLF - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "YESBANK"  data-quantity = 813  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 24.6  data-trigger_price = 24.6  data-stoploss = 0.6  data-squareoff = 4.9  data-variety = "bo"  >  YESBANK - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "YESBANK"  data-quantity = 813  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 25.200000000000003  data-variety = "co"  >  YESBANK - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "SRTRANSFIN"  data-quantity = 31  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 652.7  data-trigger_price = 652.7  data-stoploss = 16.3  data-squareoff = 130.55  data-variety = "bo"  >  SRTRANSFIN - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "SRTRANSFIN"  data-quantity = 31  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 669.0  data-variety = "co"  >  SRTRANSFIN - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "MANAPPURAM"  data-quantity = 202  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 99.0  data-trigger_price = 99.0  data-stoploss = 2.5  data-squareoff = 19.8  data-variety = "bo"  >  MANAPPURAM - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "MANAPPURAM"  data-quantity = 202  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 101.5  data-variety = "co"  >  MANAPPURAM - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "INDIGO"  data-quantity = 21  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 953.5  data-trigger_price = 953.5  data-stoploss = 23.85  data-squareoff = 190.7  data-variety = "bo"  >  INDIGO - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "INDIGO"  data-quantity = 21  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 977.35  data-variety = "co"  >  INDIGO - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "NCC"  data-quantity = 1262  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 15.85  data-trigger_price = 15.85  data-stoploss = 0.4  data-squareoff = 3.15  data-variety = "bo"  >  NCC - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "NCC"  data-quantity = 1262  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 16.25  data-variety = "co"  >  NCC - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "MOTHERSUMI"  data-quantity = 343  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 58.35  data-trigger_price = 58.35  data-stoploss = 1.45  data-squareoff = 11.65  data-variety = "bo"  >  MOTHERSUMI - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "MOTHERSUMI"  data-quantity = 343  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 59.800000000000004  data-variety = "co"  >  MOTHERSUMI - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "ZEEL"  data-quantity = 164  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 122.3  data-trigger_price = 122.3  data-stoploss = 3.05  data-squareoff = 24.45  data-variety = "bo"  >  ZEEL - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "ZEEL"  data-quantity = 164  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 125.35  data-variety = "co"  >  ZEEL - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "ESCORTS"  data-quantity = 32  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 616.05  data-trigger_price = 616.05  data-stoploss = 15.4  data-squareoff = 123.2  data-variety = "bo"  >  ESCORTS - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "ESCORTS"  data-quantity = 32  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 631.4499999999999  data-variety = "co"  >  ESCORTS - CO Order </button>  <br> <br>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "JINDALSTEL"  data-quantity = 242  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "SL"  data-price = 82.5  data-trigger_price = 82.5  data-stoploss = 2.05  data-squareoff = 16.5  data-variety = "bo"  >  JINDALSTEL - BO Order </button>  <button class="button" data-kite="rqnj99whkinv9fh4"  data-exchange = "NSE"  data-tradingsymbol = "JINDALSTEL"  data-quantity = 242  data-transaction_type = "SELL"  data-product = "MIS"  data-order_type = "MARKET"  data-trigger_price = 84.55  data-variety = "co"  >  JINDALSTEL - CO Order </button>  <br> <br> 
+
+        <hr>
+
+        <section class="row examples large">
+            <h3>Advance Features...</h3>
+            <p>Based on Requests of the Paid Users...</p>
+            
+            <h3><font color="green">Unlock Now... See Benefits below...</font></h3>
+              
+            <ul>
+            <li>Unlock - Trade with correct quantity and with proper risk and money management.</li>
+            <li>Unlock - Option to take bigger trades, with multiplier option. (So do not just restrict to 30k account, trade with any amount as per your capacity...)</li>
+            <li>Unlock - Special offers on upgrade to Fully automated trading.</li>
+            <li>Unlock - Get extra signals too. (Not posted on free channel).</li>
+            <li>Get extra alerts on event of entry, trigger, SL, target book. (optional).</li>
+            <li>Free channel will get delayed signals in future. Be Paid client and get updates on time. And stay ahead of others. Those who take the trade first are often the ones getting the major chunk of profit.</li>
+            <li>Extra goodies and free stuff from time to time for those subscribing in launch period.</li>
+            <li>Forward option available to share the Messages with your friends / other groups / channels.</li>
+            </ul>
+
+
+            <h3>Paid Service Fees: </h3>
+
+            <h4>Semi Automated:</h4>
+            <ul>
+            <li>6 Months - 6000</li>
+            <li>12 Months - 9000</li>
+            </ul>
+
+            <h4>Fully Automated:</h4>
+            <ul>
+            <li>1 Month - 3000</li>
+            <li>3 Month - 6000 <b><font color="red">(Limited period offer)</font></b>.</li>
+            <li>6 Month - 12000 <b><font color="red">(Limited period offer)</font></b>.</li>
+            <li>12 Months - 24000 <b><font color="red">(Limited period offer)</font></b>.</li>
+            </ul>
+
+            <p>
+            Make Payment to Google Pay id ( bhomikshah@okicici ) and send screenshot on Telegram @RoboTraderIndia to get started.
+            <br>
+            <b>Note:</b> We may withdraw the Limited period offer anytime without prior notice. Those who paid fees during offer period, will receive service on offer price. Others will have to pay new revised fees.
+            </p>
+            
+        </section>
+
+    </div>
+
+
+    <script src="Trade_files/publisher.js"></script>
+    <!--<script src="https://kite.trade/publisher.js?v=3"></script>-->
+
+
+    <footer>
+        <div class="mini-container">
+            <div class="text-small disclaimer">
+                <p>
+                    DISCLAIMER: Capital markets, trading, and investments have inherent 
+    risks. Please make sure you understand the risks involved and carefully 
+    read the Risk Disclosure Document as prescribed by SEBI | ICF before 
+    participating in the markets.
+
+                </p>
+                
+            </div>
+        </div>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-29026012-7', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </footer>
+
+
+    <link rel="stylesheet" href="Trade_files/publisher.css">
+    <link rel="stylesheet" href="Trade_files/publisher_002.css">
+    </body>
+    </html>
+    
